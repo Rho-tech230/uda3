@@ -21,7 +21,7 @@ script:
   - docker build -t udagram-frontend ./udagram-frontend
   
   #Tagging
-  - docker tag udagram-reverseproxy rhotech/udagram-reverseproxy:v4a
+  - docker tag udagram-reverseproxy rhotech/udagram-reverseproxyt:v4a
   - docker tag udagram-api-feed rhotech/udagram-api-feedt:v4a
   - docker tag udagram-api-user rhotech/udagram-api-usert:v4a
   - docker tag udagram-frontend rhotech/udagram-frontendt:local
