@@ -24,10 +24,10 @@ script:
   - docker tag udagram-reverseproxy rhotech/udagram-reverseproxy:v1
   - docker tag udagram-api-feed rhotech/udagram-api-feed:v1
   - docker tag udagram-api-user rhotech/udagram-api-user:v1
-  - docker tag udagram-frontend rhotech/udagram-frontend:local
+  - docker tag udagram-frontend rhotech/udagram-frontend:v1
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push rhotech/udagram-reverseproxy:v1
   - docker push rhotech/udagram-api-feed:v1
   - docker push rhotech/udagram-api-user:v1
-  - docker push rhotech/udagram-frontend:local
+  - docker push rhotech/udagram-frontend:v1
