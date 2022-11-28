@@ -30,4 +30,4 @@ after_success:
   - docker push rhotech/udagram-reverseproxy:v1
   - docker push rhotech/udagram-api-feed:v1
   - docker push rhotech/udagram-api-user:v1
-  - docker push rhotech/udagram-frontend:v1
+  - docker push rhotech/udagram-frontend:local
